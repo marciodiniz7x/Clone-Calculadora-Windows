@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.eu {
+    text-align: center;
+    
+}
+
+.nome {
+    text-align: center;
+}
+
+.fundo {
+    background: linear-gradient(45deg,rgb(44, 130, 241), rgb(172, 12, 204));
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.calculadora {
+
+    position: absolute;
+    background-color: rgb(105, 25, 197);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 15px;
+    
+    box-shadow: 10px 10px 30px rgb(59, 4, 104);
+    
+}
+
+.botao {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(72, 6, 143);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin: 3px;
+}
+.botao:hover {
+    background-color: rgb(130, 24, 179);
+}
+
+#teclaC:hover {
+    background-color:rgb(104, 170, 255);
+}
+
+#teclaApaga:hover, #teclaIgual:hover {
+    background-color: violet;
+}
+
+#teclaMais:hover, #teclaMenos:hover, #teclaMulti:hover, #teclaDiv:hover {
+    background-color: rgb(173, 85, 255);
+}
+
+#resultado {
+    max-width: 16ch;
+    overflow: hidden;
+
+    width: 213px;
+    height: 30px;
+    background-color: white;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+    border: none;
+}
+
+#teclaC {
+    background-color: rgb(41, 70, 235);
+}
+
+#teclaMais, #teclaMenos, #teclaMulti, #teclaDiv {
+    background-color: rgb(140, 0, 255);
+}
+
+
+#teclaIgual, #teclaApaga {
+    background-color: rgb(168, 43, 226);
+}
