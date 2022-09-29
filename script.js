@@ -6,11 +6,7 @@ function insert(num) {
     if (res.innerHTML == 0) {
         res.innerHTML = "";
     } 
-    setTimeout(() => {
-        if (conj.length < 3) {
-            res.innerHTML += num;
-        }
-    }, 0.01);
+    res.innerHTML += num;
 }
 
 function limpar() {
