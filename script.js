@@ -1,11 +1,16 @@
 let res = document.querySelector('#resultado');
-let conj = new Array(res)
+let conj = new Array(res);
+
+const telaErro = document.querySelector('.telaErro');
+const textoErro = document.querySelector('.textoErro')
+const botaoOk = document.querySelector('.telaOk');
 
 
 function insert(num) {
     if (res.innerHTML == 0) {
         res.innerHTML = "";
-    } 
+
+    }
     res.innerHTML += num;
 }
 
@@ -27,10 +32,25 @@ function apagar() {
 }
 
 function calcular() {
-    let resultado = res.innerHTML;
-    if (resultado) {
+    try {
+        //Se executar a operação normalmente, tudo seguirá normalmente.
+        let resultado = res.innerHTML;
+        if (resultado) {
         res.innerHTML = eval(resultado)
-    } else {
+        } else {
         res.innerHTML = 0
+        } 
+
+    } catch {
+        //Se por alguma razão a expressão não for calculada, é por que houve um erro por parte do usuário. O catch retornará algo nesse caso alertando e orientando o usuário.
+        telaErro.classList.remove('sumir');
+        
     }
 }
+
+botaoOk.addEventListener('click', () => {
+    
+    telaErro.classList.add('sumir');
+    limpar() //chama a função limpar
+
+})

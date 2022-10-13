@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .eu {
     text-align: center;
@@ -87,4 +88,86 @@
 
 #teclaIgual, #teclaApaga {
     background-color: rgb(168, 43, 226);
+}
+
+.telaErro {
+    top: -550px;
+    margin: auto;
+    position: relative;
+    width: 500px;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 4px 4px 30px 1px rgb(218, 217, 218);
+    border: none;
+    
+}
+
+.textoErro {
+    padding: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    top: 20px;
+    margin: auto;
+    position: relative;
+    width: 400px;
+    height: 50px;
+    background: white;
+    background: -webkit-linear-gradient(45deg, rgb(255, 1, 200), rgb(115, 30, 252));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.telaOk {
+    background: linear-gradient(45deg, rgb(225, 1, 255), rgb(115, 30, 252));
+    border: none;
+    position: relative;
+    align-self: center;
+    margin: 0 auto;
+    padding: 15px;
+    width: 150px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+
+}
+
+.telaOk:hover {
+    background: linear-gradient(185deg, rgb(225, 1, 255), rgb(115, 30, 252));
+    cursor: pointer;
+}
+
+.animCrescer {
+    animation: crescer 200ms linear;
+}
+
+.animDiminuir {
+    animation: diminuir 200ms linear;
+
+}
+
+
+.sumir {
+    visibility: hidden;
+}
+
+@keyframes crescer {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+}
+
+@keyframes diminuir {
+    100% {
+        width: 0px;
+        height: 0px;
+    }
+
 }
