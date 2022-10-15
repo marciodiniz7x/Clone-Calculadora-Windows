@@ -5,7 +5,6 @@
 }
 .eu {
     text-align: center;
-    
 }
 
 .nome {
@@ -17,8 +16,6 @@
     height: 100vh;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-
-
 }
 
 .calculadora {
@@ -30,9 +27,7 @@
     transform: translate(-50%, -50%);
     border-radius: 10px;
     padding: 15px;
-    
     box-shadow: 10px 10px 30px rgb(59, 4, 104);
-    
 }
 
 .botao {
@@ -65,7 +60,6 @@
 #resultado {
     max-width: 16ch;
     overflow: hidden;
-
     width: 213px;
     height: 30px;
     background-color: white;
@@ -100,7 +94,6 @@
     border-radius: 20px;
     box-shadow: 4px 4px 30px 1px rgb(218, 217, 218);
     border: none;
-    
 }
 
 .textoErro {
@@ -118,7 +111,6 @@
     background: -webkit-linear-gradient(45deg, rgb(255, 1, 200), rgb(115, 30, 252));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .telaOk {
@@ -134,7 +126,6 @@
     text-align: center;
     color: white;
     border-radius: 15px;
-
 }
 
 .telaOk:hover {
@@ -148,7 +139,6 @@
 
 .animDiminuir {
     animation: diminuir 200ms linear;
-
 }
 
 
@@ -161,7 +151,6 @@
         width: 0px;
         height: 0px;
     }
-
 }
 
 @keyframes diminuir {
@@ -169,5 +158,4 @@
         width: 0px;
         height: 0px;
     }
-
 }
