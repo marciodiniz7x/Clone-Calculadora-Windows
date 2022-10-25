@@ -58,8 +58,14 @@
 // })
 
 let chars = ['A', 'B', 'A', 'C', 'B', 1, 3, 1, 31];
+
 let uniqueChars = [...new Set(chars)];
 
-console.log(chars);
+let onlyNumbers = chars.filter(Number);
+
+
+console.log('Array completo: ' + chars);
+console.log('Array de elementos únicos: ' + uniqueChars);
+console.log('Array só de números: ' + onlyNumbers);
 
 
